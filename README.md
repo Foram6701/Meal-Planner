@@ -32,15 +32,16 @@ HOW TO USE:
    - Compile and execute the `Main` class in a Java-supported environment.
 
 2. **Main Menu Options**
-   - **Option 1**: Generate a weekly meal plan and view a complete grocery list for all meals.
-   - **Option 2**: View breakfast ideas and generate a grocery list for a selected meal.
-   - **Option 3**: View lunch ideas and generate a grocery list for a selected meal.
-   - **Option 4**: View dinner ideas and generate a grocery list for a selected meal.
-   - **Option 5**: Exit the application.
-
+   - **Option 1**: Prepare a weekly meal plan
+   - **Option 2**: Suggest breakfast ideas
+   - **Option 3**: Suggest lunch ideas
+   - **Option 4**: Suggest dinner ideas
+   - **Option 5**: Exit
+   - 
 3. **Interactive Grocery List**
    - After generating a grocery list, enter ingredient names to check them off.
    - Type `done` to exit the grocery list management.
+   - Type 'all' to check off all ingredients.
 
 EXAMPLE MENU FLOW:
 ```
@@ -52,31 +53,11 @@ Select an Option:
 5. Exit
 ```
 
-- Choosing **1** generates a random weekly meal plan and displays the grocery list.
-- Choosing **2**, **3**, or **4** provides meal suggestions and generates a grocery list for the selected meal.
+- Choosing **1** generates a random weekly meal plan and gives 2 options, one to generate a grocery list and second to       
+  return to main menu.
+- Choosing **2**, **3**, or **4** provides meal suggestions and gives option to select a meal. Once meal is selected, two more options are generated, one to generate a grocery list and second to return to main menu
 
-PREDEFINED MEALS:
-
-BREAKFAST:
-- Idli with Sambar and Coconut Chutney
-- Masala Dosa
-- Upma
-- Poha
-- Aloo Paratha
-- Vegetable Thepla
-- Paneer Bhurji Toast
-- Vegetable Uttapam Pizza
-
-LUNCH/DINNER:
-
-- Vegetable Biryani
-- Paneer Butter Masala with Roti/Paratha
-- Rajma Chawal
-- Chole Puri
-- Vegetable Pulao
-- Khichadi Kadhi
-- Potato Sabji and Roti
-- Dal Fry and Jeera Rice
+All meals are predefined in the program.
 
 PROJECT STRUCTURE:
 
@@ -101,14 +82,11 @@ Day 2:
   Breakfast: Masala Dosa
   Lunch: Rajma Chawal
   Dinner: Dal Fry and Jeera Rice
+
+1. Generate a grocery list
+2. Return to Main Menu
 ...
 
-Complete Grocery List for the Week:
-- Rice (Pending)
-- Urad Dal (Pending)
-- Salt (Pending)
-...
-```
 
 REQUIREMENTS:
 - Java Development Kit (JDK)** version 8 or higher.
@@ -128,7 +106,7 @@ FUTURE ENHANCEMENTS:
 - Add user-defined meals and ingredients.
 - Display recipes of selected meals
 - Support for dietary preferences (e.g., vegan, gluten-free).
-- History of last month's weekly meal plans
+- History of last month's/week's weekly meal plans
 - Calorie based meal planning
 - Integration with a graphical user interface (GUI).
 - more as needed
