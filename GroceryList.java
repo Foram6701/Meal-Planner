@@ -24,8 +24,12 @@ public class GroceryList {
         }
     }
 
+    public void checkOffAllItems() {
+        items.replaceAll((key, value) -> true); // Mark all items as checked off
+    }
+
     public boolean allItemsCheckedOff() {
-        return items.values().stream().allMatch(checked -> checked);
+        return items.values().stream().allMatch(checked -> checked); // Check if all are true
     }
 
     public void displayList() {
